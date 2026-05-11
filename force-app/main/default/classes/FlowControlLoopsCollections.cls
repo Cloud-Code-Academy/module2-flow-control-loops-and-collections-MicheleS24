@@ -114,9 +114,9 @@ public static String checkEvenOdd(Integer a) {
         return null;
                    }
     if (Math.mod(a, 2) == 0) {
-         result = 'even';
+         result = 'Even';
     } else {
-        result = 'odd';
+        result = 'Odd';
         }
         return result;
 }
@@ -178,8 +178,8 @@ public static String checkEvenOdd(Integer a) {
      */
     public static Integer sumUpToLimit(Integer intLimit) {
         Integer sum = 0;
-         for (Integer i = 1; i <= intLimit; i++){
-            sum  = sum + 1;
+         for (Integer i = 0; i <= intLimit; i++){
+            sum += i;
     }
         return sum;
     }
