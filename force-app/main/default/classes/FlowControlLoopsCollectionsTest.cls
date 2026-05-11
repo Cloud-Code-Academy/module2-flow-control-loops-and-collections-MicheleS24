@@ -111,17 +111,17 @@ public with sharing class FlowControlLoopsCollectionsTest {
     static void testSumUpToLimit() {
         Integer result = FlowControlLoopsCollections.sumUpToLimit(5);
         Assert.areEqual(15, result, 'Incorrect sum for limit 5');
-    
+
         result = FlowControlLoopsCollections.sumUpToLimit(10);
         Assert.areEqual(55, result, 'Incorrect sum for limit 10');
-    
+
         result = FlowControlLoopsCollections.sumUpToLimit(0);
         Assert.areEqual(0, result, 'Incorrect sum for limit 0');
-    
+
         result = FlowControlLoopsCollections.sumUpToLimit(-5);
         Assert.areEqual(0, result, 'Incorrect sum for negative limit');
     }
-    
+
     @IsTest
     static void testReturnHelloWorld() {
         String result = FlowControlLoopsCollections.returnHelloWorld();
@@ -132,10 +132,10 @@ public with sharing class FlowControlLoopsCollectionsTest {
     static void testRepeatString() {
         String result = FlowControlLoopsCollections.repeatString('Hello World!', 3);
         Assert.areEqual('Hello World!; Hello World!; Hello World!', result, 'Incorrect result for repeatString with count 3');
-        
+
         result = FlowControlLoopsCollections.repeatString('Supra', 5);
         Assert.areEqual('Supra; Supra; Supra; Supra; Supra', result, 'Incorrect result for repeatString with count 5');
-        
+
         result = FlowControlLoopsCollections.repeatString('ABC', 2);
         Assert.areEqual('ABC; ABC', result, 'Incorrect result for repeatString with count 2');
     }
